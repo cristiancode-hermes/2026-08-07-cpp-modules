@@ -1,0 +1,76 @@
+[2J[H
+  Kernel Module Viewer  --------------------------------
+  MODULE                    SIZE     USERS  STATUS  DEPENDENCIES
+  ───────
+  btrfs                          2.0M     0  Live     -
+  bridge                       416.0K     0  Live     -
+  nf_tables                    372.0K   302  Live     nft_chain_nat, nft_compat
+  aesni_intel                  348.0K     0  Live     -
+  psmouse                      212.0K     0  Live     -
+  overlay                      208.0K     1  Live     
+  nf_conntrack                 192.0K     6  Live     nf_conntrack_netlink, xt_MASQUERADE, xt_nat, nf_nat, xt_connmark, xt_conntrack
+  raid456                      192.0K     0  Live     -
+  tls                          152.0K     0  Live     -
+  floppy                       128.0K     0  Live     -
+  raid6_pq                     124.0K     4  Live     btrfs, raid456, async_raid6_recov, async_pq
+  raid10                        76.0K     0  Live     -
+  x_tables                      64.0K    10  Live     xt_set, xt_MASQUERADE, xt_nat, xt_addrtype, xt_tcpudp, xt_mark, xt_connmark, xt_conntrack, nft_compat, ip_tables
+  isofs                         60.0K     0  Live     -
+  nf_nat                        60.0K     3  Live     nft_chain_nat, xt_MASQUERADE, xt_nat
+  raid1                         60.0K     0  Live     -
+  ip_set                        60.0K     1  Live     xt_set
+  xfrm_user                     60.0K     1  Live     
+  nf_conntrack_netlink          56.0K     0  Live     -
+  autofs4                       56.0K     2  Live     
+  veth                          44.0K     0  Live     -
+  dm_multipath                  44.0K     0  Live     -
+  sha256_ssse3                  32.0K     0  Live     -
+  ip_tables                     32.0K     0  Live     -
+  joydev                        32.0K     0  Live     -
+  sha1_ssse3                    32.0K     0  Live     -
+  vga16fb                       32.0K     0  Live     -
+  inet_diag                     28.0K     1  Live     tcp_diag
+  cryptd                        24.0K     2  Live     ghash_clmulni_intel, crypto_simd
+  sch_fq_codel                  24.0K     6  Live     
+  dmi_sysfs                     24.0K     0  Live     -
+  blake2b_generic               24.0K     0  Live     -
+  raid0                         24.0K     0  Live     -
+  nf_defrag_ipv6                24.0K     1  Live     nf_conntrack
+  binfmt_misc                   24.0K     1  Live     
+  serio_raw                     20.0K     0  Live     -
+  xor                           20.0K     2  Live     btrfs, async_xor
+  async_pq                      20.0K     2  Live     raid456, async_raid6_recov
+  async_raid6_recov             20.0K     1  Live     raid456
+  xt_set                        20.0K     0  Live     -
+  vgastate                      20.0K     1  Live     vga16fb
+  nft_compat                    20.0K    31  Live     
+  nfnetlink                     20.0K     7  Live     nf_conntrack_netlink, ip_set, nft_compat, nf_tables
+  llc                           16.0K     2  Live     bridge, stp
+  xfrm_algo                     16.0K     1  Live     xfrm_user
+  async_memcpy                  16.0K     2  Live     raid456, async_raid6_recov
+  crypto_simd                   16.0K     1  Live     aesni_intel
+  async_xor                     16.0K     3  Live     raid456, async_raid6_recov, async_pq
+  async_tx                      16.0K     5  Live     raid456, async_raid6_recov, async_memcpy, async_pq, async_xor
+  xt_tcpudp                     16.0K     0  Live     -
+  xt_MASQUERADE                 16.0K     5  Live     
+  ghash_clmulni_intel           16.0K     0  Live     -
+  polyval_generic               12.0K     1  Live     polyval_clmulni
+  tcp_diag                      12.0K     0  Live     -
+  polyval_clmulni               12.0K     0  Live     -
+  nft_chain_nat                 12.0K    10  Live     
+  stp                           12.0K     1  Live     bridge
+  crc32_pclmul                  12.0K     0  Live     -
+  crct10dif_pclmul              12.0K     1  Live     
+  xt_nat                        12.0K     7  Live     
+  xt_addrtype                   12.0K     4  Live     
+  libcrc32c                     12.0K     5  Live     nf_nat, nf_conntrack, nf_tables, btrfs, raid456
+  xt_mark                       12.0K     2  Live     
+  xt_connmark                   12.0K     4  Live     
+  xt_conntrack                  12.0K     9  Live     
+  nf_defrag_ipv4                12.0K     1  Live     nf_conntrack
+  nls_iso8859_1                 12.0K     1  Live     
+  efi_pstore                    12.0K     0  Live     -
+  msr                           12.0K     0  Live     -
+  input_leds                    12.0K     0  Live     -
+  ───────
+  ∑ 70 modules · 70 used · total 5.7M

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #1e1e2e;
+    display: flex; align-items: center; justify-content: center;
+    min-height: 100vh; padding: 40px;
+  }
+  .terminal {
+    background: #181825;
+    border-radius: 12px;
+    padding: 24px 28px;
+    font-family: 'Fira Code', monospace;
+    font-size: 13px;
+    line-height: 1.55;
+    color: #cdd6f4;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    max-width: 900px;
+    width: 100%;
+    border: 1px solid #313244;
+  }
+  .terminal .title-bar {
+    display: flex; align-items: center; gap: 8px;
+    padding-bottom: 16px; border-bottom: 1px solid #313244;
+    margin-bottom: 16px;
+  }
+  .terminal .title-bar .dot {
+    width: 12px; height: 12px; border-radius: 50%;
+  }
+  .terminal .title-bar .dot.r { background: #f38ba8; }
+  .terminal .title-bar .dot.y { background: #f9e2af; }
+  .terminal .title-bar .dot.g { background: #a6e3a1; }
+  .terminal .title-bar .title {
+    margin-left: 12px; font-size: 13px; color: #6c7086;
+  }
+  .terminal .line { white-space: pre; }
+  .terminal .highlight { color: #89b4fa; }
+  .terminal .green { color: #a6e3a1; }
+  .terminal .yellow { color: #f9e2af; }
+  .terminal .red { color: #f38ba8; }
+  .terminal .dim { color: #6c7086; }
+  .terminal .cyan { color: #89dceb; }
+  .terminal .bold { color: #cdd6f4; }
+  .terminal .sep { color: #45475a; }
+  .terminal .prompt { color: #a6adc8; }
+  .terminal .header { color: #f5e0dc; }
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="title-bar">
+    <div class="dot r"></div>
+    <div class="dot y"></div>
+    <div class="dot g"></div>
+    <span class="title">modules — Kernel Module Viewer (C++23)</span>
+  </div>
+
+  <div class="line bold">  Kernel Module Viewer</div>
+  <div class="line sep">  --------------------------------</div>
+  <div class="line"></div>
+  <div class="line highlight">  MODULE                    SIZE     USERS  STATUS  DEPENDENCIES</div>
+  <div class="line sep">  ───────</div>
+  <div class="line"><span class="cyan">  btrfs                     </span> <span class="red">   2.0M</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  overlay                   </span> <span class="yellow"> 208.0K</span>     1  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  tls                       </span> <span class="yellow"> 152.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  floppy                    </span> <span class="dim"> 128.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  aesni_intel               </span> <span class="yellow"> 348.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  bridge                    </span> <span class="yellow"> 416.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  nf_tables                 </span> <span class="yellow"> 372.0K</span>   302  <span class="green">Live    </span>  nft_chain_nat, nft_compat</div>
+  <div class="line"><span class="cyan">  raid456                    </span> <span class="yellow"> 256.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  xt_MASQUERADE             </span> <span class="dim">  16.0K</span>     5  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  nf_conntrack              </span> <span class="yellow"> 176.0K</span>    10  <span class="green">Live    </span>  nf_nat, nft_chain_nat, xt_nat</div>
+  <div class="line"><span class="cyan">  raid10                    </span> <span class="dim">  64.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  raid1                     </span> <span class="dim">  64.0K</span>     1  <span class="green">Live    </span>  raid456</div>
+  <div class="line"><span class="cyan">  nf_nat                    </span> <span class="dim">  60.0K</span>     3  <span class="green">Live    </span>  nft_chain_nat, xt_MASQUERADE, xt_nat</div>
+  <div class="line"><span class="cyan">  nfnetlink                 </span> <span class="dim">  20.0K</span>     7  <span class="green">Live    </span>  nf_conntrack_netlink, ip_set, nft_compat, nf_tables</div>
+  <div class="line"><span class="cyan">  ip_set                    </span> <span class="dim">  60.0K</span>     1  <span class="green">Live    </span>  xt_set</div>
+  <div class="line"><span class="cyan">  libcrc32c                 </span> <span class="dim">  12.0K</span>     5  <span class="green">Live    </span>  nf_nat, nf_conntrack, nf_tables, btrfs, raid456</div>
+  <div class="line"><span class="cyan">  autofs4                  </span> <span class="dim">  56.0K</span>     2  <span class="green">Live    </span></div>
+  <div class="line"><span class="cyan">  raid456                   </span> <span class="yellow"> 256.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"><span class="cyan">  binfmt_misc              </span> <span class="dim">  24.0K</span>     1  <span class="green">Live    </span></div>
+  <div class="line"><span class="cyan">  isofs                     </span> <span class="dim">  60.0K</span>     0  <span class="green">Live    </span>  -</div>
+  <div class="line"></div>
+  <div class="line sep">  ───────</div>
+  <div class="line"><span class="bold">  ∑</span> 70 modules · 70 used · total 5.7M</div>
+  <div class="line"></div>
+  <div class="line prompt">  $ ./modules --sort size  │</div>
+</div>
+</body>
+</html>
